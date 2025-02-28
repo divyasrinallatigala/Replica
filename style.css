@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    
+    background: linear-gradient(-45deg, #14001f, #200030, #320046, #12001c);
+    background-size: 400% 400%;
+    animation: bgAnimation 10s infinite alternate ease-in-out;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Background Gradient Animation */
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.music-container {
+    text-align: center;
+    color: white;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.album {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.album.active {
+    transform: scale(1.2);
+    border: 2px solid white;
+}
+
+.player-controls {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+#progress {
+    width: 80%;
+    margin: 10px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+@keyframes waveMove {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.wave-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: url('wave.svg');
+    background-size: cover;
+    animation: waveMove 10s linear infinite;
+    opacity: 0.3;
+}
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#like-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#like-btn:hover {
+    color: red;
+}
+
+.playlist-section {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.playlist-section h3 {
+    color: white;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+}
+
+#playlist li {
+    color: white;
+    padding: 5px;
+}
