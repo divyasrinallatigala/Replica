@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Music Player Container -->
+    <div class="music-container">
+        
+        <!-- Album Cover Carousel -->
+        <div class="carousel">
+            <!-- Each album cover represents a song -->
+            <div class="album active">
+                <img src="assets/images/song1.jpg" alt="Album Cover">
+            </div>
+            <div class="album">
+                <img src="assets/images/song2.jpg" alt="Album Cover">
+            </div>
+            <div class="album">
+                <img src="assets/images/song3.jpg" alt="Album Cover">
+            </div>
+            <div class="album">
+                <img src="assets/images/song8.jpg" alt="Album Cover">
+            </div>
+            <div class="album">
+                <img src="assets/images/song5.jpg" alt="Album Cover">
+            </div>
+            <div class="album">
+                <img src="assets/images/song6.jpg" alt="Album Cover">
+            </div>
+            <div class="album">
+                <img src="assets/images/song7.jpg" alt="Album Cover">
+            </div>
+        </div>
+
+        <!-- Player Controls Section -->
+        <div class="player-controls">
+            <!-- Song title -->
+            <h2 id="song-title">Pawn It All</h2>
+            <!-- Artist name -->
+            <p id="artist">Alicia Keys</p>
+
+            <!-- Progress bar for the song -->
+            <input type="range" id="progress" value="0">
+
+            <!-- Play, Pause, Next, and Previous Controls -->
+            <div class="controls">
+                <button id="prev"><i>⏮️</i></button>  <!-- Previous Song -->
+                <button id="play"><i>▶️</i></button>  <!-- Play/Pause Button -->
+                <button id="next"><i>⏭️</i></button>  <!-- Next Song -->
+            </div>
+            <div class="song-info">
+                <h2 id="song-title">Instant Crush</h2>
+                <p id="artist-name">Daft Punk ft. Julian Casablancas</p>
+                <button id="like-btn" onclick="toggleLike()">❤️</button>
+            </div>
+            <div class="playlist-section">
+                <h3>Liked Songs</h3>
+                <ul id="playlist"></ul>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
