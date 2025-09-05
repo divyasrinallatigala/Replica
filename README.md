@@ -160,6 +160,6 @@ If you encounter any issues or have questions, please:
 - [ ] Audio visualizer
 - [ ] Local storage for liked songs
 
----
+👉 [**Tap Here**](https://divyasrinallatigala.github.io/Replica/) to view the live site.
 
 **Enjoy your music! 🎵**
